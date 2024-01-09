@@ -152,14 +152,24 @@
 //    console.log(user, str);
 
 
-function values(x, y) {
-    const sum = x + y;
-    const sub = x - y;
-    const mult = x * y;
+// function values(x, y) {
+//     const sum = x + y;
+//     const sub = x - y;
+//     const mult = x * y;
 
-    return { sum, sub, mult };
+//     return { sum, sub, mult };
+// }
+
+// const result = values(5, 5);
+// console.log(result);
+
+// ------------------------------------------Function Expression--------------------------------
+
+let add = function(num1,num2)
+{
+    return num1 + num2
+    
 }
-
-const result = values(5, 5);
+let sum = add
+let result =sum(5,5)
 console.log(result);
-
