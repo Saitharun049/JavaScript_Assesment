@@ -206,14 +206,31 @@
 
 // ---------------------------------------This Keyword--------------------------------------------
  
-let laptop1 = {
-    cpu :'i7',
-    ram : '16',
-    brand : 'HP',
-    getConfig: function(){
-        console.log(this.cpu);
+// let laptop1 = {
+//     cpu :'i7',
+//     ram : '16',
+//     brand : 'HP',
+//     getConfig: function(){
+//         console.log(this.cpu);
+//     }
+
+// }
+
+// laptop1.getConfig();
+
+// ----------------------------------------Greatest of 2 numbers---------------------------------------------
+
+function findGreatestNumber(a, b) {
+    if (a > b) {
+      return a;
+    } else {
+      return b;
     }
-
-}
-
-laptop1.getConfig();
+  }
+  
+  const num1 = 8;
+  const num2 = 12;
+  
+  const greatestNumber = findGreatestNumber(num1, num2);
+  console.log(`The greatest number between ${num1} and ${num2} is: ${greatestNumber}`);
+  
